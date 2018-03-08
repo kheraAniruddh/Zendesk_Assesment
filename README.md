@@ -28,7 +28,7 @@ Design and develop wrapper APIs for Zendesk ticket viewer.
   2. You can access the details of a specific ticket by the URL http://localhost:5000/viewticket?ticketId=1 
      where ticketId is the param, changing that you can access other ticket details or click on the id of a specific ticket on the viewalltickets page to request the details of that specfic ticket.
  
- ![Alt text] (/snapshots/snap_ticketDetailsVIEW.png)
+ ![Alt text](/snapshots/snap_ticketDetailsVIEW.png)
  
  ## To run test cases
  On the terminal from the Zendesk_Assessment folder type:
