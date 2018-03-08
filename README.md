@@ -7,7 +7,7 @@ Design and develop wrapper APIs for Zendesk ticket viewer.
  3. Make a new file '.env' under the Zendesk_Assessment folder and add the following:\
         `AGENT_EMAIL= {{email_id}}`\
         `AGENT_PASSWORD = {{password}}`\
-         `ZENDESK_BASE_URL = {{subdomain/apiv2/}} ex: https://ak5146.zendesk.com/api/v2/`\
+         `ZENDESK_BASE_URL = {{subdomain/apiv2/}} ex: https://ak5146.zendesk.com/api/v2/`
  4. Now type `pip install .` 
   To finish the setup
  
