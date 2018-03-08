@@ -8,7 +8,7 @@ As a part of the assessment design and develop wrapper APIs for ticket viewer.
         `AGENT_EMAIL= {{email_id}}`
         `AGENT_PASSWORD = {{password}}`
          `ZENDESK_BASE_URL = {{subdomain/apiv2/}} ex: https://ak5146.zendesk.com/api/v2/`
- 4. Now type pip install . 
+ 4. Now type `pip install .` 
   To finish the setup
  5. Type `EXPORT FLASK_APP=app` followed by `flask run`
  
