@@ -10,8 +10,9 @@ Design and develop wrapper APIs for Zendesk ticket viewer.
          `ZENDESK_BASE_URL = {{subdomain/apiv2/}} ex: https://ak5146.zendesk.com/api/v2/`
  4. Now type `pip install .` 
   To finish the setup
- 5. Type `EXPORT FLASK_APP=app` followed by `flask run`
  
+ ## To run app
+ Type `EXPORT FLASK_APP=app` followed by `flask run`
  
  Now if the setup was successful, you should see that the app is running on localhost:5000
  
@@ -25,7 +26,9 @@ Design and develop wrapper APIs for Zendesk ticket viewer.
   2. You can access the details of a specific ticket by the URL http://localhost:5000/viewticket?ticketId=1 
      where ticketId is the param, changing that you can access other ticket details or click on the id of a specific ticket on the viewalltickets page to request the details of that specfic ticket.
  
- 
+ ## To run test cases
+ On the terminal from the Zendesk_Assessment folder type:
+  `python setup.py test`
   
 
 
