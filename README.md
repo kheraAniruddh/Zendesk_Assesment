@@ -23,7 +23,7 @@ Design and develop wrapper APIs for Zendesk ticket viewer.
   http://localhost:5000/viewalltickets?page=1 
   note: the tickets per page is limited to 100. Change the page param in the URL or click on `next` button on UI to move to next page.
   
-![alt text] https://github.com/kheraAniruddh/Zendesk_Assesment/blob/master/snapshots/snap_allticketsVIEW.png
+![alt text] (https://github.com/kheraAniruddh/Zendesk_Assesment/blob/master/snapshots/snap_allticketsVIEW.png)
   
   2. You can access the details of a specific ticket by the URL http://localhost:5000/viewticket?ticketId=1 
      where ticketId is the param, changing that you can access other ticket details or click on the id of a specific ticket on the viewalltickets page to request the details of that specfic ticket.
