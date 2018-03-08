@@ -1,5 +1,5 @@
 # Zendesk_Assesment
-As a part of the assessment design and develop wrapper APIs for ticket viewer.
+Design and develop wrapper APIs for Zendesk ticket viewer.
 
 ## Setup
  1. Ensure you have Python 3.5+ on the system.
