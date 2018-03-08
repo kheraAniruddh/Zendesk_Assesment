@@ -1,0 +1,35 @@
+{# Zendesk_Assign/templates/viewticket.html #}
+{# It inherits layout.html #}
+
+
+{% extends "layout.html" %}
+{% block body %}
+  {{ super() }}
+  {% if result['error']!= None %}
+     <div>{{result['message']}}</div>
+     <div>{{result['Invalid parameter']}}</div>    
+  {% endif %}     
+
+    <table id="App-table">
+   		<tr>
+        	<th>ID</th>
+          <th>Status</th>
+   			  <th>Subject</th>
+        	<th>Description</th>
+        	<th>Created At</th>
+        	<th>Updated At</th>
+          <th>Priority</th>
+        	<th>Assignee ID</th>
+   		</tr>
+   		<tr>
+        <td>{{result['id']}}</td>
+        <td>{{ result['status'] }}</td>
+   			<td>{{ result['subject'] }}</td>
+   			<td>{{ result['description'] }}</td>
+     	  <td>{{ result['created_at']}}</td>
+        <td>{{ result['updated_at']}}</td>
+        <td>{{ result['priority']}}</td>
+        <td>{{ result['assignee_id']}}</td>
+   		</tr>
+   	</table>	
+{% endblock %}

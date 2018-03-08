@@ -1,0 +1,48 @@
+.App-header {
+	background-color: black;
+	color: white;
+	height: 60px; 
+}
+
+.App-login {
+	text-align: left;
+}
+
+.App-buttons-div {
+	background-color: #F6F6F6;
+	text-align: center;
+	height: 40px;
+}
+
+.App-button {
+	height:100%;
+	background-color: black;
+	color: white;
+	border-radius: 10%;
+}
+
+.App-button:hover {
+	cursor: pointer;
+}
+
+.App-content {
+	text-align: center;
+	margin-top: 2%;
+}
+
+
+#App-table th, #App-table td {
+    text-align: center;
+    padding: 8px;
+    width:1%;
+}
+
+#App-table th {
+	background-color: black;
+	color: white;
+}
+
+#App-table  tr:nth-child(even) {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+}

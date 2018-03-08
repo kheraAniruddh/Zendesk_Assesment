@@ -1,0 +1,21 @@
+{# Zendesk_Assign/templates/layout.html #}
+{# This is the parent template, inherited by child template #}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ticket Viewer</title>
+        <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='css/app.css') }}"/>
+    </head>
+    <body>
+    	<h1 class="App-header">Welcome to the ticket viewer.</h1>
+		<div class="App-buttons-div">
+			<button class="App-button" onclick="javascript:location.href='/viewalltickets?page=1'">View all tickets</button> 	
+		</div>	
+	    <div class="App-content"> 	
+    		{% block body %}
+    		{% endblock %}
+		</div>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"> </script>
+    </body>
+</html>

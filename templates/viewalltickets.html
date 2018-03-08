@@ -1,0 +1,41 @@
+{# Zendesk_Assign/templates/viewalltickets.html #}
+{# It inherits layout.html #}
+
+
+{% extends "layout.html" %}
+{% block body %}
+    {{ super() }}
+    {% if result['error'] != None %}
+     <div>{{result['message']}}</div>
+     <div>{{result['Invalid parameter']}}</div>
+    {% endif %} 
+
+     <div> Total tickets: {{result['count']}} 
+      {% if result['previous_page'] != None %}
+        <button class="App-button" onclick='goToPage("{{result["previous_page"]}}")'>Prev</button>
+      {% endif %} 
+      {% if result['next_page'] != None %}
+        <button class="App-button" onclick='goToPage("{{result["next_page"]}}")' > Next</button>
+      {% endif %}   
+     </div> 
+     <table id="App-table">
+   		<tr>
+        <th>ID</th>
+        <th>Status</th>
+   			<th>Subject</th>
+        <th>Description</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+   		</tr>
+   		{% for row in result['tickets'] %}
+   		<tr>
+        <td><a href="/viewticket?ticketId={{row['id']}} " >{{row['id']}}</a></td>
+   			<td>{{ row['status']}}</td>
+        <td>{{ row['subject'] }}</td>
+   			<td>{{ row['description'] }}</td>
+        <td>{{ row['created_at']}}</td>
+        <td>{{ row['updated_at']}}</td>
+   		</tr>
+   		{% endfor %}
+	   </table>
+{% endblock %}
