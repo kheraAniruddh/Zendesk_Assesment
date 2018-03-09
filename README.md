@@ -8,7 +8,7 @@ Design and develop wrapper APIs for Zendesk ticket viewer.
         `AGENT_EMAIL= {{email_id}}`\
         `AGENT_PASSWORD = {{password}}`\
          `ZENDESK_BASE_URL = {{subdomain/apiv2/}} ex: https://ak5146.zendesk.com/api/v2/`
- 4. Now type `pip install .` 
+ 4. Now type `pip install --editable .` 
   To finish the setup
  
  ## To run app
