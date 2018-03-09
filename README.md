@@ -1,4 +1,4 @@
-# Zendesk_Assesment
+# Zendesk_Assessment
 Design and develop wrapper APIs for Zendesk ticket viewer.
 
 ## Setup
