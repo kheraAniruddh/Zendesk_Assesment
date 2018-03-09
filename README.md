@@ -12,7 +12,8 @@ Design and develop wrapper APIs for Zendesk ticket viewer.
   To finish the setup
  
  ## To run app
- Type `EXPORT FLASK_APP=app` followed by `flask run`
+ Type `export FLASK_APP=app` followed by `flask run` for Mac,Linux
+ Type `set FLASK_APP=app` followed by `flask run` for Windows
  
  Now if the setup was successful, you should see that the app is running on localhost:5000
  
