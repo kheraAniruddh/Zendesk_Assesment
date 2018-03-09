@@ -27,8 +27,4 @@ class AppTestCase(unittest.TestCase):
 		response = self.app.get('/viewtallickets?page=1')
 		assert '200 OK' in response.status
 
-
-	
-	def test_json_viewTickt(self):
-		print("hi")
 		
