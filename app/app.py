@@ -66,4 +66,4 @@ def pageNotFound(error):
 @app.errorhandler(500)
 def pageNotFound(error):
 	""" Handles unexpected server errors """
-# 	return render_template('error.html', result = error)		
+	return render_template('error.html', result = error)		
